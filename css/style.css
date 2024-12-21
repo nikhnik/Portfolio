@@ -16,9 +16,6 @@ body{
     margin: 0;
     padding: 0;
 }
-.logo{
-    /* display: inline-block; */
-}
 .item{
     font-size: 1.3rem;
     font-family: "Inconsolata", serif;
