@@ -199,6 +199,7 @@ nav {
 .aboutImage img{
     width: 100%;
     max-width: 300px;
+    border-radius: 100%;
 }
 .aboutText p {
     font-size: 1.2rem;
@@ -243,5 +244,110 @@ nav {
     .aboutImage img {
         max-width: 200px;
         height: 200px;
+    }
+}
+
+#experience {
+    background-color: #F6E6CB;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 10px solid #A0937D;
+}
+.experienceContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 10px solid #A0937D; */
+}
+.experienceContainer h2{
+    font-size: 2.5rem;
+    font-family: "Inconsolata", serif;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+.experienceContent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #A0937D;
+}
+.companyLogo{
+    display: flex;
+    justify-content: right;
+}
+.companyLogo img{
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+.experienceDetails{
+    padding-left: 10px;
+}
+.experienceDetails h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.experienceDetails p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.8;
+}
+.experienceDetails ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.experienceDetails ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+    .experienceContent {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        text-align: center; /* Center text for smaller screens */
+    }
+    .companyLogo {
+        justify-content: center; /* Center logo */
+        margin-bottom: 10px; /* Add spacing between logo and text */
+    }
+    .experienceDetails {
+        padding-left: 0; /* Remove padding for better alignment */
+    }
+    .experienceContainer h2 {
+        font-size: 2rem; /* Adjust font size for headings */
+    }
+    .experienceDetails h3 {
+        font-size: 1.5rem; /* Adjust font size for subheadings */
+    }
+    .experienceDetails p,
+    .experienceDetails ul li {
+        font-size: 0.9rem; /* Adjust text size for smaller screens */
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #experience {
+        padding: 30px 10px; /* Reduce padding for very small screens */
+    }
+    .experienceContainer h2 {
+        font-size: 1.8rem; /* Further reduce heading size */
+    }
+    .experienceDetails h3 {
+        font-size: 1.3rem; /* Further reduce subheading size */
+    }
+    .experienceDetails p,
+    .experienceDetails ul li {
+        font-size: 0.8rem; /* Further reduce text size */
+    }
+    .companyLogo img {
+        max-width: 100px; /* Smaller logo for small screens */
     }
 }
